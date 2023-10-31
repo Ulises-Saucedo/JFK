@@ -161,7 +161,8 @@ if (isset($_SESSION['user_id'])) {
     <div class="notice__container"></div>
 
     <div class="not__found">
-        <lottie-player src="https://lottie.host/ee0d1614-3f81-4330-ae28-5d83d6832342/usyRH4QXBq.json" background="##ffffff" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+        <lottie-player src="https://lottie.host/27f1e1da-80d5-4ee0-92a7-e9e500546e00/queLd4mB0N.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+        <p>Noticia no encontrada</p>
     </div>
 
     <script src="script.js"></script>
