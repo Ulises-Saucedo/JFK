@@ -52,15 +52,15 @@
                                         Especialidades
                                     </a>
                                     <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
+                                    <li><a class="dropdown-item" href="../especialidades/electromecanica/electromecanica.php"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
+                                    <li><a class="dropdown-item" href="../especialidades/informatica/informatica.php"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
+                                    <li><a class="dropdown-item" href="../especialidades/programacion/programacion.php"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
                                     </ul>
                                 </li>
                             <li class="nav-item">
@@ -96,9 +96,9 @@
                 <li><a href="../../../index.php"><i class="bi bi-house bi-ul-r"></i>Inicio</a></li>
                 <li class="specialties"><a href="#" class="toggle-icon"><i class="bi bi-caret-down bi-ul-r"></i>Especialidades</a>
                     <ul class="submenu animate__animated animate__fadeIn">
-                        <li><a href="#"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
-                        <li><a href="#"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
-                        <li><a href="#"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
+                        <li><a href="../especialidades/electromecanica/electromecanica.php"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
+                        <li><a href="../especialidades/informatica/informatica.php"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
+                        <li><a href="../especialidades/programacion/programacion.php"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
                     </ul>
                 </li>
                 <li><a href="../inscripcion/inscripcion.php"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a></li>

@@ -57,17 +57,17 @@ if (isset($_SESSION['user_id'])) {
                                     Especialidades
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i
+                                    <li><a class="dropdown-item" href="../especialidades/electromecanica/electromecanica.php"><i
                                                 class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i
+                                    <li><a class="dropdown-item" href="../especialidades/informatica/informatica.php"><i
                                                 class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="./src/views/Biblioteca/biblioteca.html"><i
+                                    <li><a class="dropdown-item" href="../especialidades/programacion/programacion.php"><i
                                                 class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
                                 </ul>
                             </li>
@@ -109,9 +109,9 @@ if (isset($_SESSION['user_id'])) {
                 <li class="specialties"><a href="#" class="toggle-icon"><i
                             class="bi bi-caret-down bi-ul-r"></i>Especialidades</a>
                     <ul class="submenu animate__animated animate__fadeIn">
-                        <li><a href="#"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
-                        <li><a href="#"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
-                        <li><a href="#"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
+                        <li><a href="../especialidades/electromecanica/electromecanica.php"><i class="bi bi-gear bi-ul-r"></i>Electromecánica</a></li>
+                        <li><a href="../especialidades/informatica/informatica.php"><i class="bi bi-motherboard bi-ul-r"></i>Informática</a></li>
+                        <li><a href="../especialidades/programacion/programacion.php"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
                     </ul>
                 </li>
                 <li><a href="../inscripcion/inscripcion.php"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a></li>
@@ -431,12 +431,12 @@ if (isset($_SESSION['user_id'])) {
             <div class="footer__box">
                 <h2 class="footer__h2">Qué Estudiar</h2>
                 <ul class="footer__ul">
-                    <li class="footer__1er-item"><a href="Especialidades/programacion/programacion.html"
+                    <li class="footer__1er-item"><a href="../especialidades/programacion/programacion.php"
                             target="_blank">Programación</a></li>
-                    <li class="footer__1er-item"><a href="https://www.instagram.com/escuelatecnica5lanus/?next=%2F"
+                    <li class="footer__1er-item"><a href="../especialidades/informatica/informatica.php"
                             target="_blank">Informatica</a></li>
                     <li class="footer__1er-item"><a
-                            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBzDMLffdnFrgKFlGmqBpmkfHbDkljwwWdmxXZnVbXXJRNLxTzbDCktZJPdmXlwMdFXWxH"
+                            href="../especialidades/electromecanica/electromecanica.php"
                             target="_blank">Electromecánica</a></li>
                 </ul>
             </div>
