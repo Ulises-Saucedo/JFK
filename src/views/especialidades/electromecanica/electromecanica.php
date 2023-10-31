@@ -21,7 +21,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon">
-    <title>John Fitzgerald Kennedy | Programación</title>
+    <title>John Fitzgerald Kennedy | Electromecánica</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
     <link rel="stylesheet" href="../../../styles/header.css">
     <link rel="stylesheet" href="../../../styles/footer.css">
     <link rel="stylesheet" href="style.css">
@@ -132,6 +133,246 @@
             </ul>
         </div>
     </header>
+    <main>
+      <div class="info">
+        <span>Bienvenido a</span>
+        <h2>ELECTROMECÁNICA</h2>
+      </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one">
+            </div>
+            <div class="swiper-slide swiper-slide--two">
+            </div>
+            <div class="swiper-slide swiper-slide--three">
+            </div>
+            <div class="swiper-slide swiper-slide--four">
+            </div>
+            <div class="swiper-slide swiper-slide--five">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          </div>
+          <img src="images/logov2.png" alt="" class="bg">
+        <img src="images/logov2.png" alt="" class="bg2">
+    </main>
+    <section>
+        <div class="wrapper">
+            <div class="box">
+                <input checked="checked" id="box1" name="box" type="radio"> 
+                <label for="box1">Vision general</label>
+                <div class="content">
+                    <h3 class="title-h3">VISION GENERAL</h3>
+                      <div class="content-p">
+                        <p>La tecnicatura en electromecánica de nuestra escuela técnica secundaria es un programa educativo diseñado para brindar a los estudiantes una sólida formación en los campos de la electricidad, la electrónica y la mecánica. Durante su formación, los estudiantes adquirirán conocimientos teóricos y habilidades prácticas que les permitirán desarrollarse como profesionales en el ámbito de la electromecánica.</p>
+                        <p>Nuestro plan de estudios se centra en proporcionar a los estudiantes una base sólida en los principios fundamentales de la electricidad y la electrónica. Aprenderán sobre circuitos eléctricos, sistemas de control, electrónica analógica y digital, así como sobre los componentes y dispositivos utilizados en sistemas electromecánicos.</p>
+                        <p>Además de los aspectos eléctricos y electrónicos, nuestros estudiantes también se familiarizarán con los conceptos y las técnicas de la mecánica. Aprenderán sobre máquinas y sistemas mecánicos, elementos de transmisión de movimiento, mantenimiento preventivo y correctivo, y técnicas de medición y control.</p>
+                      </div>
+                </div>
+                <input id="box2" name="box" type="radio"> 
+                <label for="box2">Plan de estudio</label>
+                <div class="content">
+                    <h3 class="title-h3">TECNICATURA EN ELECTROMECÁNICA</h3>
+                    <div class="accordion">
+                      <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          4° Año
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            <div class="content-ul">
+                              <h3 class="primer-formacion">Formacion General</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Literatura</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Ingles</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Educacíon Física</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Salud y Adolescencia</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Historia</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Geografía</li>
+                              </ul>
+                             </div>
+                             
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formacion Cientifico Tecnologico</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Matemática Ciclo Superior</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Física</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Química</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Conocimientos de los Materiales</li>
+                              </ul>
+                             </div>
+    
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Técnico Específica</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Dibujo Tecnológico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Maquinas Eléctricas y Automatismos</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Diseño y Procesamiento Mecánico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Instalaciones y Aplicaciones de la Energía</li>
+                              </ul>
+                             </div>
+    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          5° Año
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            <div class="content-ul">
+                              <h3 class="primer-formacion">Formacion General</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Literatura</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Ingles</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Educacíon Física</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Política y Ciudadanía</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Historia</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Geografía</li>
+                              </ul>
+                             </div>
+                             
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Científico Tecnológico</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Análisis Matemático</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Mecánica y Mecanismos</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Electrotecnia</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Resistencia y Ensayos de los Materiales</li>
+                              </ul>
+                             </div>
+    
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Técnico Específica</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Maquinas Eléctricas y Automatismos</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Diseño y Procesamiento Mecánico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Instalaciones y Aplicaciones de la Energía</li>
+                              </ul>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          6° Año
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            <div class="content-ul">
+                              <h3 class="primer-formacion">Formacion General</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Literatura</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Ingles</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Educacíon Física</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Filosofía</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Arte</li>
+                              </ul>
+                             </div>
+                             
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Científico Tecnológico</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Matemática Aplicada</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Termodinámica y Máquinas Térmicas</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Electrotecnia</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Sistemas Mecánicos</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Derechos del Trabajo</li>
+                              </ul>
+                             </div>
+    
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Técnico Específica</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Laboratorio de Mediciones Eléctricas</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Maquinas Eléctricas y Automatismos</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Diseño y Procesamiento Mecánico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Instalaciones y Aplicaciones de la Energía</li>
+                              </ul>
+                             </div> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <div class="accordion-item-header">
+                          7° Año
+                        </div>
+                        <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            <div class="content-ul">
+                              <h3 class="primer-formacion">Practicas Profesionalizantes</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Practicas Profesionalizantes del Sector Electromecánico</li>
+                              </ul>
+                             </div>
+                             
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formacion Cientifico Tecnologico</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Emprendimientos Productivos y Desarrollo Local</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Electrónica Industrial</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Seguridad, Higiene y Protección Ambiental</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Máquinas Eléctricas</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Sistemas Mecánicos</li>
+                              </ul>
+                             </div>
+    
+                             <div class="content-ul">
+                              <h3 class="primer-formacion">Formación Técnico Específica</h3>
+                              <ul class="primer-formacion--ul">
+                                <li><i class="fa-regular fa-angles-right"></i>Laboratorio de Metrología y Control de Calidad</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Mantenimiento y Montaje Electromecánico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Proyecto y Diseño Electromecánico</li>
+                                <li><i class="fa-regular fa-angles-right"></i>Proyecto y Diseño de Instalaciones Eléctricas</li>
+                              </ul>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <input id="box3" name="box" type="radio"> 
+                <label for="box3">Campo laboral</label>
+                <div class="content">
+                  <h3 class="title-h3">SALIDA LABORAL</h3>
+                    <div class="content-ul">
+                      <p style="padding-left: 20px;">Los egresados podran desempeñarse en las siguientes áreas:</p>
+                        <ul class="primer-formacion--ul">
+                          <li><i class="fa-regular fa-angles-right"></i>Ingeniería en Electromecánica</li>
+                          <li><i class="fa-regular fa-angles-right"></i>Ingeniería Industrial</li>
+                          <li><i class="fa-regular fa-angles-right"></i>Automatización y Control Industrial</li>
+                          <li><i class="fa-regular fa-angles-right"></i>Ingeniería Eléctrica</li>
+                          <li><i class="fa-regular fa-angles-right"></i>Ingeniería en Electrónica</li>
+                        </ul>
+                    </div>
+                    <div class="content-ul">
+                      <p style="padding-left: 20px;">Universidades donde podes seguir estudiando:</p>
+                      <ul class="primer-formacion--ul">
+                        <li><i class="fa-regular fa-angles-right"></i>Universidad de Buenos Aires (UBA)</li>
+                        <li><i class="fa-regular fa-angles-right"></i>Universidad tecnológica Nacional (UTN)</li>
+                        <li><i class="fa-regular fa-angles-right"></i>Universidad Nacional de La Plata (UNLP)</li>
+                        <li><i class="fa-regular fa-angles-right"></i>Universidad Argentina de la Empresa (UADE) </li>
+                        <li><i class="fa-regular fa-angles-right"></i>Universidad de Palermo (UP)</li>
+                      </ul>
+                     </div>
+                </div>
+                <input id="box4" name="box" type="radio"> 
+                <label for="box4">Practicas</label>
+                <div class="content">
+                  <h3 class="title-h3">PRACTICAS PROFESIONALIZANTES</h3>
+                    <div class="content-p">
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum aut consectetur aspernatur reprehenderit numquam rerum dignissimos officiis! Laboriosam fugit et corrupti officiis tempora totam cum eligendi est earum neque.</P>
+                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum aut consectetur aspernatur reprehenderit numquam rerum dignissimos officiis! Laboriosam fugit et corrupti officiis tempora totam cum eligendi est earum neque.</P>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum aut consectetur aspernatur reprehenderit numquam rerum dignissimos officiis! Laboriosam fugit et corrupti officiis tempora totam cum eligendi est earum neque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="imagen">  
+    </section>
+
     <footer>
         <div class="footer__container">
             <div class="footer__box">
@@ -164,6 +405,22 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+      const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+       accordionItemHeaders.forEach(accordionItemHeader => {
+         accordionItemHeader.addEventListener("click", event => {
+           accordionItemHeader.classList.toggle("active");
+           const accordionItemBody = accordionItemHeader.nextElementSibling;
+           if(accordionItemHeader.classList.contains("active")) {
+             accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+           }
+           else {
+             accordionItemBody.style.maxHeight = 0;
+           }    
+         });
+       });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
     <script src="script.js"></script>
     <script src="../../../js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
