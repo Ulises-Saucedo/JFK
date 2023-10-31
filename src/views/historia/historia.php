@@ -64,7 +64,7 @@
                                     </ul>
                                 </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a>
+                                <a class="nav-link active" aria-current="page" href="../inscripcion/inscripcion.php"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="../foro/foro.php"><i class="bi bi-chat-left-dots bi-ul-r">Foro</i></a>
@@ -101,7 +101,7 @@
                         <li><a href="#"><i class="bi bi-laptop bi-ul-r"></i>Programación</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a></li>
+                <li><a href="../inscripcion/inscripcion.php"><i class="bi bi-file-earmark-text bi-ul-r"></i>Inscripción</a></li>
                 <li><a href="../foro/foro.php"><i class="bi bi-chat-left-dots bi-ul-r"></i>Foro</a></li>
                 <li><a href="../biblioteca/biblioteca.php"><i class="bi bi-archive bi-ul-r"></i>Biblioteca</a></li>
                 <li class="school"><a href="#" class="toggle-icon"><i class="bi bi-caret-down bi-ul-r"></i>Escuela</a>
