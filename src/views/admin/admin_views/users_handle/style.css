@@ -6,9 +6,8 @@
     max-width: 500px;
     display: flex;
     padding: 50px;
-    border: 2px solid #000;
-    box-shadow: 4px 4px 0px #000;
-    background: #2f54f8;
+    background: #FAFAFA;
+    z-index: -1;
 }
 .form-group{
     width: 300px;
@@ -19,9 +18,31 @@ label,input{
 }
 input{
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 15px;
     outline: none;
-    border: 2px solid #000;
+    border: 1px solid #EDEDED;
     background: #fff;
-    box-shadow: 2px 2px 0px #000;
+}
+input[type="submit"]{   
+    border-radius: 5px;
+    background: #74A8DA;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .form__container{
+        max-width: 300px;
+    }
+    .form-group{
+        width: 200px;
+    }
+}
+@media (max-width: 500px){
+    .form__container{
+        width: 200;
+        padding: 20px;
+    }
+    .form-group{
+        width: 100%;
+    }
 }

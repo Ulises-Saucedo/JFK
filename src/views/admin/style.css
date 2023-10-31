@@ -110,4 +110,5 @@ nav.open ~ .overlay {
     max-width: 300px !important;
     text-wrap: balance;
     text-align: center;
+    z-index: -1;
 }
