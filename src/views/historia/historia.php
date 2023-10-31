@@ -85,10 +85,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../admin/panel.php">Panel de administrador</a>
                                 </li>
-                            <?php else: ?>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../login/login.php"><i class="bi bi-info-circle"></i></a>
-                                </li>
                             <?php endif; ?>
                         </ul>
                     </div>
@@ -117,8 +113,6 @@
                 <li><a href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
                 <?php if(!empty($user)): ?>
                     <li><a href="../admin/panel.php">Panel de administrador</a></li>
-                <?php else: ?>
-                    <li><a href="../login/login.php"><i class="bi bi-info-circle"></i></a></li>
                 <?php endif; ?>
             </ul>
         </div>

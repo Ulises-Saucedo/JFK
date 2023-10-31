@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
     <header>
@@ -85,10 +85,6 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../admin/panel.php">Panel de administrador</a>
                                 </li>
-                            <?php else: ?>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../login/login.php"><i class="bi bi-info-circle"></i></a>
-                                </li>
                             <?php endif; ?>
                         </ul>
                     </div>
@@ -117,8 +113,6 @@
                 <li><a href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
                 <?php if(!empty($user)): ?>
                     <li><a href="../admin/panel.php">Panel de administrador</a></li>
-                <?php else: ?>
-                    <li><a href="../login/login.php"><i class="bi bi-info-circle"></i></a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -126,13 +120,10 @@
     <nav class="sidebar">
         <div class="wrap">
             <div class="search">
-                <form action="" method="post">
-                    <input type="text" name="searchTerm" class="searchTerm" placeholder="Buscar...">
-                    <button type="submit" id="searchButton" class="searchButton">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
-
+                <input type="text" name="searchTerm" class="searchTerm" placeholder="Buscar...">
+                <button type="button" id="searchButton" class="searchButton">
+                    <i class="bi bi-search"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -148,6 +139,11 @@
     </dialog>
     <div id="pdfLinks" class="pdf-links">
     </div>
+
+    <div class="not__found">
+        <lottie-player src="https://lottie.host/ee0d1614-3f81-4330-ae28-5d83d6832342/usyRH4QXBq.json" background="##ffffff" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+    </div>
+
     <script src="script.js"></script>                                                                                                                                                                                           
     <script src="../../js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

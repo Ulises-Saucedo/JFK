@@ -44,7 +44,7 @@ form{
     top: 100px;
     left: 300px;
 }
-.cards__container{
+.card__container{
     border: 2px solid #000;
     border-radius: 10px;
     padding: 50px;

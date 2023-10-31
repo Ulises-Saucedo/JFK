@@ -30,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -44,7 +44,7 @@ if (isset($_SESSION['user_id'])) {
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="src/images/logo.svg" alt=""
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../images/logo.svg" alt=""
                                 width="70" height="94">John F. Kennedy</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
@@ -102,10 +102,6 @@ if (isset($_SESSION['user_id'])) {
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../admin/panel.php">Panel de administrador</a>
                                 </li>
-                            <?php else: ?>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../login/login.php"><i class="bi bi-info-circle"></i></a>
-                                </li>
                             <?php endif; ?>
                         </ul>
                     </div>
@@ -135,8 +131,6 @@ if (isset($_SESSION['user_id'])) {
                 <li><a href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
                 <?php if (!empty($user)): ?>
                     <li><a href="../admin/panel.php">Panel de administrador</a></li>
-                <?php else: ?>
-                    <li><a href="../login/login.php"><i class="bi bi-info-circle"></i></a></li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -144,12 +138,10 @@ if (isset($_SESSION['user_id'])) {
     <nav class="sidebar">
         <div class="wrap">
             <div class="search">
-                <form action="./handlers/show_news.php" method="post">
-                    <input type="text" name="searchTerm" class="searchTerm" placeholder="Buscar...">
-                    <button type="submit" id="searchButton" class="searchButton">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </form>
+                <input type="text" name="searchTerm" class="searchTerm" placeholder="Buscar...">
+                <button type="button" id="searchButton" class="searchButton">
+                    <i class="bi bi-search"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -159,14 +151,18 @@ if (isset($_SESSION['user_id'])) {
         <form action="handlers/edit_news.php" method="post">
             <input type="number" name="id" id="id" style="display: none">
             <label for="name"></label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
             <label for="description"></label>
-            <textarea name="description" id="" cols="30" rows="10"></textarea>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
             <input type="submit" value="Actualizar datos">
         </form>
     </dialog>
 
     <div class="notice__container"></div>
+
+    <div class="not__found">
+        <lottie-player src="https://lottie.host/ee0d1614-3f81-4330-ae28-5d83d6832342/usyRH4QXBq.json" background="##ffffff" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
+    </div>
 
     <script src="script.js"></script>
     <script src="../../js/header.js"></script>

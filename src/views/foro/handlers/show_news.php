@@ -18,7 +18,7 @@
 
     $permissions = !empty($user);
     $search = $_POST['search'];
-    if(!empty($search)) {
+    if(!empty($_POST['search'])){
         $query = "SELECT * FROM foro WHERE name LIKE :search";
         $stmt = $conn->prepare($query);
 
@@ -40,5 +40,7 @@
         } else {
             die('Query Error');
         }
+    }else{
+        echo 'Noticia no encontrada';
     }
 ?>

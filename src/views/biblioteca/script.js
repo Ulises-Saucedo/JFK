@@ -1,17 +1,31 @@
 document.addEventListener('DOMContentLoaded', function(){
     let pdf_container = document.querySelector('.pdf-links');
     pdf_container.style.display = 'none';
+    let not__found = document.querySelector('.not__found');
+    not__found.style.display = 'none';
     showPdfs()
 
     let searchInput = document.querySelector('.searchTerm');
+    let searchButton = document.getElementById('searchButton');
 
     function showPdfs() {
         fetchPdfs('handlers/show_all_pdfs.php', 'GET');
     }
 
-    searchInput.addEventListener('keyup', function () {
-        if (searchInput.value) {
+    searchInput.addEventListener('keydown', function (event) {
+        if (searchInput.keyCode === 13 || event.key === 'Enter') {
             const search = searchInput.value;
+            if (searchInput.value) {
+                fetchPdfs('handlers/show_pdf.php', 'POST', `search=${search}`);
+            } else {
+                showPdfs();
+            }
+        }
+    })
+
+    searchButton.addEventListener('click', function() {
+        const search = searchInput.value;
+        if (searchInput.value) {
             fetchPdfs('handlers/show_pdf.php', 'POST', `search=${search}`);
         } else {
             showPdfs();
@@ -31,7 +45,11 @@ document.addEventListener('DOMContentLoaded', function(){
             .then(response => {
                 if (!response.error) {
                     const pdfs = response;
-                    const template = pdfs.map(pdf => `
+                    if (pdfs.length === 0) {
+                        pdf_container.style.display = 'none';
+                        not__found.style.display = 'block';
+                    }else{
+                        const template = pdfs.map(pdf => `
                         <div class="cards__container">
                             <a href="${pdf.ruta_pdf}">
                                 <img src="../../images/pdf.png">
@@ -40,9 +58,11 @@ document.addEventListener('DOMContentLoaded', function(){
                             ${pdf.permissions ? ` <button class="btn-borrar" data-id="${pdf.id}">Borrar</button>
                                                     <button class="btn-editar" data-id="${pdf.id}">Editar</button>`: ''}
                         </div>`
-                    ).join('');
-                    pdf_container.style.display = 'block';
-                    pdf_container.innerHTML = template;
+                        ).join('');
+                        pdf_container.style.display = 'block';
+                        pdf_container.innerHTML = template;
+                        not__found.style.display = 'none';
+                    }
                 }
             })
             .catch(error => {
