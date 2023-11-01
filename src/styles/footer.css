@@ -20,6 +20,7 @@ footer{
     padding: 30px 0;
     margin: auto;
     font-family: 'Poppins', sans-serif;
+    background: #fff;
 }
 .footer__box{
     height: 200px;
@@ -62,11 +63,10 @@ footer{
 /*----------------------MEDIAS QUERIES----------------------*/
 @media screen and (max-width: 800px){
     .footer__container{
-        width: 100%;
+        width: 50%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 20px 0;
-        min-width: 356px;
     }
     .footer__box{
         margin: 0;

@@ -46,8 +46,6 @@ section {
     font-family: "Montserrat", sans-serif;
     color: #000000;
     line-height: 1.5;
-    max-width: 145vh;
-    margin: 0 auto;
 }
 .box {
     display: flex;
@@ -57,7 +55,6 @@ section {
     border: 1px solid #f3f3f3;
 }
 .box label {
-    color: #252525;
     background: rgba(255, 255, 255);
     text-align: center;
     order: 1;
@@ -110,11 +107,11 @@ section {
         padding-left: 0;
         text-align: center;
     }
-    .box label {
-        background: rgb(39, 89, 255);
+    .box label{
+        border: 1px solid #1c1c1c;
     }
     .box input[type="radio"]:checked + label {
-        color: rgb(255, 255, 255);
+        color: rgb(38, 89, 255);
         border-bottom: 3px solid rgb(38, 89, 255);
         transition: all 0.3s ease;
     }
@@ -307,8 +304,7 @@ section {
 }
 @media screen and (max-width: 450px) {
     .box {
-        max-width: 270px;
-        height: 350px;
+        max-width: 390px;
         margin: 10px auto;
         padding: 7px;
     }
@@ -326,6 +322,10 @@ section {
     .specialties-title {
         font-size: 30px;
         font-family: "Montserrat", sans-serif;
+        text-align: justify
+    }
+    .info h2{
+        font-size: 20px;
     }
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");

@@ -23,6 +23,7 @@
     <link rel="shortcut icon" href="../../../images/logo.png" type="image/x-icon">
     <title>John Fitzgerald Kennedy | Informática</title>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="../../../styles/header.css">
     <link rel="stylesheet" href="../../../styles/footer.css">
     <link rel="stylesheet" href="style.css">
@@ -418,6 +419,7 @@
        });
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    <script src="https://kit.fontawesome.com/dbf412ac9a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="../../../js/header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
