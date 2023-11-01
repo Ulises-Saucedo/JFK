@@ -79,7 +79,7 @@
                                 <a class="nav-link active" aria-current="page" href="../historia/historia.php"><i class="bi bi-bank bi-ul-r"></i>Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a>
+                                <a class="nav-link active" aria-current="page" href="../contacto/contacto.php"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a>
                             </li>
                             <?php if (!empty($user)): ?>
                                 <li class="nav-item">
@@ -110,7 +110,7 @@
                         <li><a href="../historia/historia.php"><i class="bi bi-bank bi-ul-r"></i>Historia</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
+                <li><a href="../contacto/contacto.php"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
                 <?php if(!empty($user)): ?>
                     <li><a href="../admin/panel.php">Panel de administrador</a></li>
                 <?php endif; ?>

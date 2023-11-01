@@ -43,14 +43,14 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../images/logo.svg" alt=""
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../../images/logo.svg" alt=""
                                 width="70" height="94">John F. Kennedy</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../../../index.php"><i
+                                <a class="nav-link active" aria-current="page" href="../../../../index.php"><i
                                         class="bi bi-house bi-ul-r"></i>Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -94,12 +94,12 @@
                                         class="bi bi-bank bi-ul-r"></i>Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><i
+                                <a class="nav-link active" aria-current="page" href="../../contacto/contacto.php"><i
                                         class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a>
                             </li>
                             <?php if (!empty($user)): ?>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../admin/panel.php">Panel de administrador</a>
+                                    <a class="nav-link active" aria-current="page" href="../../admin/panel.php">Panel de administrador</a>
                                 </li>
                             <?php endif; ?>
                         </ul>
@@ -127,9 +127,9 @@
                         <li><a href="../../historia/historia.php"><i class="bi bi-bank bi-ul-r"></i>Historia</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
+                <li><a href="../../contacto/contacto.php"><i class="bi bi-envelope-paper bi-ul-r"></i>Contacto</a></li>
                 <?php if (!empty($user)): ?>
-                    <li><a href="../admin/panel.php">Panel de administrador</a></li>
+                    <li><a href="../../admin/panel.php">Panel de administrador</a></li>
                 <?php endif; ?>
             </ul>
         </div>
