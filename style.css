@@ -266,4 +266,7 @@
         font-size: 30px;
         font-family: 'Montserrat', sans-serif;
     }
+    .card{
+        width: 90%;
+    }
 }
