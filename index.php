@@ -181,7 +181,7 @@
                 <p class="list">✅ Conecte con la comunidad escolar.</p>
                 <p class="list">✅ Aprenda sobre temas relevantes.</p>
                 <p class="list">✅ Participe en la vida escolar.</p>
-                <button class="noticias">Ir a últimas noticias.</button>
+                <button class="noticias"><a class="noticias__texto" href="./src/views/foro/foro.php">Ir a últimas noticias.</a></button>
             </div>
         </div>
         <div class="card">
@@ -191,7 +191,7 @@
                 <p class="list">✅ Desarrolle su potencial.</p>
                 <p class="list">✅ Conecte con otros.</p>
                 <p class="list">✅ Ambiente positivo y acogedor.</p>
-                <button class="noticias">Realice la preinscripción.</button>
+                <button class="noticias"><a class="noticias__texto" href="./src/views/inscripcion/inscripcion.php">Realice la preinscripción.</a></button>
             </div>
         </div>
     </section>

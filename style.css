@@ -148,6 +148,10 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+.noticias__texto{
+    text-decoration: none;
+    color: white;
+}
 .noticias:hover{
     background: #1f4f9c;
 }
