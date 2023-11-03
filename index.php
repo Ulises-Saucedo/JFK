@@ -177,20 +177,28 @@
         <div class="card">
             <div class="card__title">
                 <h2>Entérese de las últimas noticias.</h2>
+            </div>
+            <div class="card__content">
                 <p class="list">✅ Informese de las novedades de la escuela.</p>
                 <p class="list">✅ Conecte con la comunidad escolar.</p>
                 <p class="list">✅ Aprenda sobre temas relevantes.</p>
                 <p class="list">✅ Participe en la vida escolar.</p>
+            </div>
+            <div class="card__button">
                 <button class="noticias"><a class="noticias__texto" href="./src/views/foro/foro.php">Ir a últimas noticias.</a></button>
             </div>
         </div>
         <div class="card">
             <div class="card__title">
                 <h2>¿Está pensando inscribirse?</h2>
+            </div>
+            <div class="card__content">
                 <p class="list">✅ Prepárese para el futuro.</p>
                 <p class="list">✅ Desarrolle su potencial.</p>
                 <p class="list">✅ Conecte con otros.</p>
                 <p class="list">✅ Ambiente positivo y acogedor.</p>
+            </div>
+            <div class="card__button">
                 <button class="noticias"><a class="noticias__texto" href="./src/views/inscripcion/inscripcion.php">Realice la preinscripción.</a></button>
             </div>
         </div>
