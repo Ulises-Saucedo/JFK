@@ -6,7 +6,7 @@ Página para la escuela secundaria EEST N5 de Lanús JFK, esta página forma par
   <li>Agregar funcionalidades relacionadas al usuario estándar.</li>
   <li>De querer migrar a otro lenguaje, utilizar un stack adecuado para el proyecto.</li>
   <li>De no usar un framework de CSS, usar una metodología como lo puede ser BEM.</li>
-  <li>Recomendacion:
+  <li>Recomendación:
     <ul>
       <li>Usar un framework de JS, ya sea React, Vue, Svelte, etc.</li>
       <li>Utilizar un framework de PHP como lo puede ser Laravel para el backend.</li>
