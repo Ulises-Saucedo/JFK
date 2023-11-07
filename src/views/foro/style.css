@@ -38,6 +38,7 @@ header{
 }
 form{
     display: flex;
+    flex-direction: column;
 }
 .notice__container{
     position: absolute;

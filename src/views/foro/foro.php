@@ -150,9 +150,9 @@ if (isset($_SESSION['user_id'])) {
         <button class="cerrar-modal">x</button>
         <form action="handlers/edit_news.php" method="post">
             <input type="number" name="id" id="id" style="display: none">
-            <label for="name"></label>
+            <label for="name">Nombre de la noticia*</label>
             <input type="text" name="name" id="name">
-            <label for="description"></label>
+            <label for="description">Descripción*</label>
             <textarea name="description" id="description" cols="30" rows="10"></textarea>
             <input type="submit" value="Actualizar datos">
         </form>

@@ -89,6 +89,7 @@ header{
 }
 form{
     display: flex;
+    flex-direction: column;
 }
 .not__found{
     position: absolute !important;
