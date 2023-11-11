@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let notice_container = document.querySelector('.notice__container');
     notice_container.style.display = 'none';
-    let not__found = document.querySelector('.not__found');
-    not__found.style.display = 'none';
 
     let searchInput = document.querySelector('.searchTerm');
     let searchButton = document.getElementById('searchButton');
@@ -46,24 +44,22 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => {
                 if (!response.error) {
                     const news = response;
-                    if (news.length === 0) {
-                        notice_container.style.display = 'none';
-                        not__found.style.display = 'block';
-                    }else{
                         const template = news.map(new_s => `
-                        <div class="card__container">
-                            <h2 class="card__title">${new_s.name}</h2>
-                            <p class="card__description">${new_s.description}</p>
-                            ${new_s.permissions ? `
-                                <button class="btn-borrar" data-id="${new_s.id}">Borrar</button>
-                                <button class="btn-editar" data-id="${new_s.id}">Editar</button>`: ''}
+                        <div class="notice-card">
+                            <div class="additional">
+                                <img src="../../../src/images/logo copia.svg" alt="Logo">
+                                ${new_s.permissions ? ` <button class="btn-borrar card-boton" data-id="${new_s.id}">Borrar</button>
+                                                        <button class="btn-editar card-boton" data-id="${new_s.id}">Editar</button>`: ''}
+                            </div>
+                            <div class="general">
+                                <h2>${new_s.name}</h2>
+                                <p class="card__description">${new_s.description}</p>
+                            </div>
                         </div>`).join('');
                         
                         notice_container.style.display = 'block';
-                        not__found.style.display = 'none';
                         notice_container.innerHTML = template;
                     }
-                }
             })
             .catch(error => {
                 console.error('Error:', error);

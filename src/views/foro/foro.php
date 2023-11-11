@@ -30,7 +30,6 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
@@ -159,11 +158,6 @@ if (isset($_SESSION['user_id'])) {
     </dialog>
 
     <div class="notice__container"></div>
-
-    <div class="not__found">
-        <lottie-player src="https://lottie.host/27f1e1da-80d5-4ee0-92a7-e9e500546e00/queLd4mB0N.json" background="##FFFFFF" speed="1" style="width: 300px; height: 300px" loop autoplay direction="1" mode="normal"></lottie-player>
-        <p>Noticia no encontrada</p>
-    </div>
 
     <script src="script.js"></script>
     <script src="../../js/header.js"></script>

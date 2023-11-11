@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     let pdf_container = document.querySelector('.pdf-links');
     pdf_container.style.display = 'none';
-    let not__found = document.querySelector('.not__found');
-    not__found.style.display = 'none';
     showPdfs()
 
     let searchInput = document.querySelector('.searchTerm');
@@ -45,25 +43,20 @@ document.addEventListener('DOMContentLoaded', function(){
             .then(response => {
                 if (!response.error) {
                     const pdfs = response;
-                    if (pdfs.length === 0) {
-                        pdf_container.style.display = 'none';
-                        not__found.style.display = 'block';
-                    }else{
                         const template = pdfs.map(pdf => `
-                        <div class="cards__container">
-                            <a href="${pdf.ruta_pdf}">
-                                <img src="../../images/pdf.png">
+                        <div class="notice-card">
+                            <a class="titulo-carta" href="${pdf.ruta_pdf}">
+                                <img class="pdf-img" src="../../images/pdf.png">
                                 <h2 class="card__title">${pdf.name}</h2>
                             </a>
-                            ${pdf.permissions ? ` <button class="btn-borrar" data-id="${pdf.id}">Borrar</button>
-                                                    <button class="btn-editar" data-id="${pdf.id}">Editar</button>`: ''}
+                            ${pdf.permissions ? `   <button class="btn-borrar x-boton" data-id="${pdf.id}">Borrar</button>
+                                                    <button class="btn-editar x-boton" data-id="${pdf.id}">Editar</button>`: ''}
                         </div>`
                         ).join('');
                         pdf_container.style.display = 'block';
                         pdf_container.innerHTML = template;
                         not__found.style.display = 'none';
                     }
-                }
             })
             .catch(error => {
                 console.error('Error:', error);

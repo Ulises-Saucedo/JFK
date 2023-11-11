@@ -59,8 +59,14 @@ header{
 .lists .nav-link:hover .link {
     color: #fff;
 }
+.titulo-carta{
+    text-decoration: none;
+    color: #1c1c1c;
+    text-align: center;
+}
 #pdfLinks {
-    display: grid;
+    display: flex !important;
+    flex-wrap: wrap;
     position: absolute;
     top: 50px;
     left: 250px;
@@ -82,24 +88,266 @@ header{
     height: 100%;
     text-align: center;
 }
+.notice-card {
+    width: 200px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.notice-card h2{
+    font-size: 15px;
+    padding: 5px;
+}
+.notice-card .x-boton{
+    margin-left: 26px;
+}
 .img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+form{
+    display: flex;
+}
+@media only screen and (max-width: 700px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 250px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 200px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: auto;
+    }
+    #pdfLinks {
+        padding: 20px 20px 0;
+    }
+}
+@media only screen and (max-width: 859px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 225px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 130px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 130px;
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 235px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 225px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 110px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 110px;
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 235px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 185px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 65px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 65px;
+        
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 215px;
+    }
+    .notice-card h2{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 175px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 58px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 58px;
+        
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 215px;
+    }
+    .notice-card h2{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 175px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 49px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 49px;
+        
+    } 
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 215px;
+    }
+    .notice-card h2{
+        font-size: 8px;
+        padding: 2px;
+    }
+}
+@media only screen and (max-width: 377px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 165px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 45px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 45px;
+        
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 210px;
+    }
+    .notice-card h2{
+        font-size: 5px;
+    }
+}
+@media only screen and (max-width: 369px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 165px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 44px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 44px;
+        
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 210px;
+    }
+    .notice-card h2{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 367px) {
+    body {
+      font-size: 18px; /* Cambia el tamaño de la fuente */
+    }
+    header {
+      padding: 15px; /* Cambia el relleno del encabezado */
+    }
+    .sidebar {
+      width: 130px; /* Ancho más pequeño */
+    }
+    .notice-card {
+      max-width: 35px; /* Ajuste del ancho del elemento PDF */
+      font-size: 14px; /* Reducción del tamaño de fuente para el elemento PDF */
+    }
+    .pdf-img {
+        width: 35px;
+        
+    }
+    #pdfLinks {
+        padding: 20px 10px 0;
+        left: 145px;
+        width: calc(100% - 155px);
+    }
+    .notice-card h2{
+        font-size: 7px;
+        padding: 2px;
+    }
+}
+x-boton{
+    border: none;
+    border-radius: 5px;
+}
+btn-borrar{
+    background: #E47E8C;
+}
+btn-editar{
+    background: #BAD5F0;
 }
 form{
     display: flex;
     flex-direction: column;
-}
-.not__found{
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    max-width: 400px !important;
-    text-align: center;
-    text-wrap: balance;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
 }
