@@ -141,6 +141,20 @@ const router = createRouter({
           }
         }
       ]
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: () => {
+        return { name: '404' }
+      }
+    },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('../views/404.vue'),
+      meta: {
+        title: '404'
+      }
     }
   ]
 })
