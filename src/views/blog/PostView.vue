@@ -2,17 +2,18 @@
 import { ref, type Ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useBlogStore } from '@/stores/blog'
-import { storeToRefs } from 'pinia'
+import { useAuthStore } from '@/stores/auth'
 import Quill from 'quill'
 import 'quill/dist/quill.snow.css'
 import Navbar from '@/components/Navbar.vue'
 import Footer from '@/components/Footer.vue'
 import Loader from '@/components/Loader.vue'
 
+const user: Ref<any> = ref([])
 const isLoading = ref(true)
 const route = useRoute()
 const blog = useBlogStore()
-const { user } = storeToRefs(blog)
+const auth = useAuthStore()
 const { getPost, deletePost } = blog
 const { postId } = route.params
 const postContent: Ref<any> = ref()
@@ -30,6 +31,8 @@ onMounted(async () => {
 
   quill.clipboard.dangerouslyPasteHTML(0, postContent.value.content)
 
+  user.value = await auth.getUserRol()
+
   isLoading.value = false
 })
 </script>
@@ -46,7 +49,10 @@ onMounted(async () => {
     <h1 class="text-center text-3xl sm:text-5xl font-bold">{{ postContent?.title }}</h1>
     <div id="editor" class="max-w-[1500px] w-full my-4 mx-auto"></div>
 
-    <div class="w-full max-w-[1500px] my-4 mx-auto flex justify-center gap-x-4" v-if="user">
+    <div
+      class="w-full max-w-[1500px] my-4 mx-auto flex justify-center gap-x-4"
+      v-if="user.includes('SUPERADMIN')"
+    >
       <button class="btn btn-error" @click="deletePost(postId)">Eliminar</button>
       <RouterLink :to="{ name: 'edit-post', params: { postId } }" class="btn btn-neutral">
         Editar
