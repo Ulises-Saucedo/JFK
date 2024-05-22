@@ -46,8 +46,8 @@ export const useLibraryStore = defineStore('library', () => {
       if (docTitle.toLowerCase().includes(title.toLowerCase())) {
         booksDoc.push({
           title: doc.data().title,
-          content: doc.data().content,
-          description: doc.data().description,
+          bookFile: doc.data().bookFile,
+          created_by: doc.data().created_by,
           id: doc.id
         })
       }
