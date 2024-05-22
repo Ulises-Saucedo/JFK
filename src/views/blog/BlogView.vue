@@ -16,11 +16,11 @@ const { pagination, getAllPosts, getQueryPosts } = blog
 const { blogPosts, totalPages } = storeToRefs(blog)
 const { getUserRol } = useAuthStore()
 
-const searchPost = () => {
+const searchPost = async () => {
   page.value = 1
   isLoading.value = true
 
-  getQueryPosts(title.value)
+  await getQueryPosts(title.value)
 
   isLoading.value = false
 }
