@@ -18,7 +18,7 @@ const searchPost = async () => {
   page.value = 1
   isLoading.value = true
 
-  getQueryBooks(title.value)
+  await getQueryBooks(title.value)
 
   isLoading.value = false
 }
