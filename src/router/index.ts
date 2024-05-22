@@ -183,7 +183,7 @@ router.beforeEach(async (to, from, next) => {
 router.beforeEach(async (to, from, next) => {
   const user = await getCurrentUser()
 
-  if (to.meta.auth) {
+  if (to.meta.admin) {
     if (user) {
       next()
     } else {
