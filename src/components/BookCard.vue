@@ -16,7 +16,7 @@ const props = defineProps({
 })
 
 onMounted(async () => {
-  bookValidation.value = await isBookCreatedByUserId(props.book.userId)
+  bookValidation.value = await isBookCreatedByUserId(props.book.created_by)
 })
 </script>
 
