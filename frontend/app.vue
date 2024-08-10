@@ -1,6 +1,13 @@
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: "bg-gray-100",
+  },
+});
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
