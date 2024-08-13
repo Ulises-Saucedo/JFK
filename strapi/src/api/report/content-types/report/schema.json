@@ -4,7 +4,8 @@
   "info": {
     "singularName": "report",
     "pluralName": "reports",
-    "displayName": "Report"
+    "displayName": "Report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,9 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "description": {
+      "type": "string"
     }
   }
 }

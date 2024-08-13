@@ -836,6 +836,7 @@ export interface ApiReportReport extends Schema.CollectionType {
     singularName: 'report';
     pluralName: 'reports';
     displayName: 'Report';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -844,6 +845,7 @@ export interface ApiReportReport extends Schema.CollectionType {
     title: Attribute.String;
     content: Attribute.RichText;
     slug: Attribute.UID<'api::report.report', 'title'>;
+    description: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
