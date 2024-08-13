@@ -26,8 +26,5 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/logotipo.png" }],
     },
   },
-  routeRules: {
-    "/**": { ssr: false },
-    "/blog/:slug": { ssr: true },
-  },
+  ssr: false,
 });
