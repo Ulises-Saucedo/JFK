@@ -1,10 +1,13 @@
-# 🚀 Getting started with Strapi
+# 🚀 Comenzando con Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Strapi viene con una [Interfaz de Línea de Comandos](https://docs.strapi.io/dev-docs/cli) (CLI) completamente equipada que te permite crear y gestionar tu proyecto en segundos.
+
+### 📋 Requisitos previos
+Antes de comenzar, asegúrate de crear la base de datos llamada school en MySQL.
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Inicia tu aplicación Strapi con autoReload habilitado. [Más información](https://docs.strapi.io/dev-docs/cli#strapi-develop)
 
 ```
 npm run develop
@@ -14,7 +17,7 @@ yarn develop
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Inicia tu aplicación Strapi con autoReload deshabilitado. [Más información](https://docs.strapi.io/dev-docs/cli#strapi-start)
 
 ```
 npm run start
@@ -24,7 +27,7 @@ yarn start
 
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+Construye tu panel de administración. [Más información](https://docs.strapi.io/dev-docs/cli#strapi-build)
 
 ```
 npm run build
@@ -32,30 +35,30 @@ npm run build
 yarn build
 ```
 
-## ⚙️ Deployment
+## ⚙️ Despliegue
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+Strapi te ofrece muchas opciones posibles para el despliegue de tu proyecto, incluyendo [Strapi Cloud](https://cloud.strapi.io). Consulta la [sección de despliegue de la documentación](https://docs.strapi.io/dev-docs/deployment) para encontrar la mejor solución para tu caso de uso.
 
 ```
 yarn strapi deploy
 ```
 
-## 📚 Learn more
+## Aprende más
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+- [Centro de recursos de Strapi](https://strapi.io/resource-center) - Centro de recursos de Strapi.
+- [Documentación de Strapi](https://docs.strapi.io) - Documentación oficial de Strapi.
+- [Tutoriales de Strapi](https://strapi.io/tutorials) - Lista de tutoriales realizados por el equipo principal y la comunidad.
+- [Blog de Strapi](https://strapi.io/blog) - Blog oficial de Strapi con artículos realizados por el equipo de Strapi y la comunidad.
+- [Registro de cambios](https://strapi.io/changelog) - Descubre las actualizaciones del producto Strapi, nuevas características y mejoras generales..
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+No dudes en consultar el [repositorio de GitHub de Strapi](https://github.com/strapi/strapi). ¡Tu opinión y contribuciones son bienvenidas!
 
-## ✨ Community
+## ✨ Comunidad
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+- [Discord](https://discord.strapi.io) - Únete al chat con la comunidad de Strapi, incluyendo el equipo principal.
+- [Foro](https://forum.strapi.io/) - Lugar para discutir, hacer preguntas y encontrar respuestas, mostrar tu proyecto en Strapi y recibir retroalimentación, o simplemente hablar con otros miembros de la comunidad.
+- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - Una lista curada de cosas asombrosas relacionadas con Strapi.
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+<sub>🤫 Psst! [Strapi está contratando](https://strapi.io/careers).</sub>
