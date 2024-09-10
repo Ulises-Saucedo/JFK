@@ -1,10 +1,10 @@
 # 📚 Página Web Escolar
-Este proyecto es una página web escolar que gestiona el contenido de una biblioteca y un blog utilizando Nuxt para el frontend y Strapi para el backend con una base de datos MySQL.
+Este proyecto es una página web escolar que gestiona el contenido de una biblioteca y un blog utilizando Nuxt para el frontend y Strapi para el backend con una base de datos Postgresql.
 
 ### 🛠️ Tecnologías Utilizadas
 - Frontend: [Nuxt 3](https://nuxt.com/)
 - Backend: [Strapi](https://docs.strapi.io/)
-- Base de Datos: [MySQL](https://www.mysql.com/)
+- Base de Datos: [PostgreSQL](https://www.postgresql.org/)
 
 ### 🚀 Características
 - Gestión de Biblioteca: Permite a los usuarios explorar y buscar libros disponibles.
