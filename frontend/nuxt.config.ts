@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/strapi",
-    "nuxt-swiper",
     "dayjs-nuxt",
-    "nuxt-bootstrap-icons",
     "nuxt-aos",
+    "shadcn-nuxt",
+    "@nuxt/icon"
   ],
   strapi: {
     url: process.env.STRAPI_URL || "http://localhost:1337",
@@ -18,8 +18,9 @@ export default defineNuxtConfig({
     cookie: {},
     cookieName: "strapi_jwt",
   },
-  tailwindcss: {
-    configPath: "tailwind.config",
+  shadcn: {
+    prefix: "",
+    componentDir: "./components/ui",
   },
   app: {
     head: {
