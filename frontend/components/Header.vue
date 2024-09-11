@@ -74,8 +74,8 @@ const unblockScroll = () => {
           <LinkNavigation to="/inscripcion" text="Inscripción" />
           <LinkNavigation to="/contacto" text="Contacto" />
           <LinkNavigation to="/biblioteca" text="Biblioteca" />
-          <Button class="bg-blue-600 hover:bg-blue-500">
-            Últimas noticias
+          <Button as-child class="bg-blue-600 hover:bg-blue-500">
+            <NuxtLink to="/noticias">Últimas noticias</NuxtLink>
           </Button>
         </nav>
       </template>
@@ -118,8 +118,10 @@ const unblockScroll = () => {
           text="Biblioteca"
           @click="toggleMenu"
         />
-        <Button class="w-full bg-blue-600 hover:bg-blue-500">
-          Últimas noticias
+        <Button as-child class="w-full bg-blue-600 hover:bg-blue-500">
+          <NuxtLink to="/noticias" @click="toggleMenu">
+            Últimas noticias
+          </NuxtLink>
         </Button>
       </nav>
     </Transition>
