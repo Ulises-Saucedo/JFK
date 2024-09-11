@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     "dayjs-nuxt",
     "nuxt-aos",
     "shadcn-nuxt",
-    "@nuxt/icon"
+    "@nuxt/icon",
+    "@vueuse/nuxt",
   ],
   strapi: {
     url: process.env.STRAPI_URL || "http://localhost:1337",
