@@ -14,8 +14,8 @@ defineProps({
 <template>
   <NuxtLink
     :to="to"
-    class="block"
-    :class="[$route.path === to ? 'text-blue-500' : 'text-black']"
+    class="block px-4 rounded py-1 hover:bg-blue-50 font-medium"
+    :class="[$route.path === to && 'text-blue-500 bg-blue-50']"
   >
     {{ text }}
   </NuxtLink>
