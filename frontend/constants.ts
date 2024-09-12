@@ -4,21 +4,18 @@ import type { Testimonial } from "./types/testimonial";
 export const tech: Array<Tech> = [
   {
     name: "Programación",
-    icon: "laptop",
     description:
-      "Nuestra tecnicatura en Programación te ofrece las herramientas para convertir ideas en aplicaciones funcionales.",
+      "Aprende a desarrollar software y aplicaciones. Domina lenguajes de programación y crea soluciones innovadoras para problemas complejos.",
   },
   {
     name: "Informática",
-    icon: "cpu",
     description:
-      "Con nuestra tecnicatura en Informática, te prepararás para ser un profesional versátil en un mundo cada vez más digitalizado.",
+      "Especialízate en sistemas y redes informáticas. Gestiona infraestructuras tecnológicas y asegura el funcionamiento eficiente de sistemas computacionales.",
   },
   {
     name: "Electromecánica",
-    icon: "gear",
     description:
-      "La tecnicatura en Electromecánica combina principios de la mecánica y la electricidad para formar profesionales.",
+      "Combina electricidad y mecánica en sistemas industriales. Diseña, mantiene y optimiza maquinaria y equipos electromecánicos para la industria moderna.",
   },
 ];
 
