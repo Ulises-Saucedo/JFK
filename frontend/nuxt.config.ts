@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxt/icon",
     "@vueuse/nuxt",
+    "nuxt-marquee",
   ],
   strapi: {
     url: process.env.STRAPI_URL || "http://localhost:1337",
