@@ -29,5 +29,6 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/png", href: "/logotipo.png" }],
     },
   },
+  css: ["~/assets/css/style.css"],
   ssr: false,
 });
