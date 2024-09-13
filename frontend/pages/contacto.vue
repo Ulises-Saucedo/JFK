@@ -6,7 +6,7 @@ useHead({
 
 <template>
   <div class="my-16 max-w-screen-md mx-auto px-8">
-    <h2 class="text-black text-center text-5xl font-bold my-8">Contacto</h2>
+    <h2 class="text-center text-5xl font-bold my-8">Contacto</h2>
     <div class="">
       <iframe
         width="100%"

@@ -6,39 +6,39 @@ useHead({
 
 <template>
   <div class="my-16 max-w-screen-md mx-auto px-8">
-    <h2 class="text-black text-5xl font-bold text-center">
+    <h2 class="text-5xl font-bold text-center">
       Inscripción de ingresantes 2024
     </h2>
     <section class="space-y-4 my-8">
-      <p class="text-black">
+      <p>
         Haremos un primer acercamiento para quienes deseen inscribirse a
         <span class="font-bold">
           1° año en el ciclo lectivo 2024. Del 23 al 26 de octubre de 2023 de 09
           a 11 hs y de 14 a 16 hs.
         </span>
       </p>
-      <p class="text-black">
+      <p>
         Se deberá presentar fotocopia del DNI del alumno y certificado de alumno
         regular de la escuela a la cual asiste. Además, se tomarán datos e
         información particular de contacto para conformar un registro.
       </p>
-      <p class="text-black">
+      <p>
         Una vez realizado este primer contacto de forma personal su hijo/a
         quedará registrado como solicitante de una vacante para cursar el año en
         el ciclo lectivo 2024.
       </p>
-      <p class="text-black font-bold">
+      <p class="font-bold">
         ACLARACIÓN IMPORTANTE: La conformación del registro de contacto no
         implica reserva de vacante y/o turno.
       </p>
       <div>
-        <p class="text-black">
+        <p>
           La inscripción definitiva se realizará a partir del momento en que el
           alumno haya promovido el año en curso y de acuerdo al siguiente
           cronograma:
         </p>
         <ul class="list-disc my-2 ms:2 sm:ms-6">
-          <li class="text-black">
+          <li>
             <span class="font-bold"> A partir del 11/12: </span> Los sres.
             Padres deberán descargar de
             <span class="font-bold">www.eest5lanus.edu.ar</span> sección
@@ -47,7 +47,7 @@ useHead({
             formularios y autorizaciones que deberán completar y firmar. Para
             ser presentados en la inscripción definitiva.
           </li>
-          <li class="text-black">
+          <li>
             <span class="font-bold">26/12 al 28/12:</span> Inscripción
             definitiva, para lo cual los Sres. Padres deberán concurrir con la
             <span class="font-bold">
@@ -64,11 +64,11 @@ useHead({
           </li>
         </ul>
       </div>
-      <p class="text-black">
+      <p>
         La misma se reanudará a partir del día 12 de febrero de 2024 en el mismo
         horario.
       </p>
-      <p class="text-black">
+      <p>
         Informamos que la Dirección del Establecimiento decidirá la asignación
         de los <span class="font-bold">turnos</span> de acuerdo a las vacantes
         disponibles y a la
@@ -79,22 +79,38 @@ useHead({
         definitiva.
       </p>
     </section>
+
     <div class="space-y-2">
-      <DownloadButton
-        href="/files/DOCUMENTACION_INSCRIPCION.pdf"
-        download="Documentacion.pdf"
-        text="DOCUMENTACIÓN INSCRIPCIÓN"
-      />
-      <DownloadButton
-        href="/files/CUADERNILLO_MTM_1.pdf"
-        download="Cuadernillo_matematica.pdf"
-        text="CUADERNILLO MATEMATICA 1ER AÑO"
-      />
-      <DownloadButton
-        href="/files/CUADERNILLO_PLG_1.pdf"
-        download="Cuadernillo_practicas_del_lenguaje.pdf"
-        text="CUADERNILLO PDL 1ER AÑO"
-      />
+      <Button class="w-full bg-blue-600 hover:bg-blue-500" as-child>
+        <a
+          class="flex items-center"
+          href="/files/DOCUMENTACION_INSCRIPCION.pdf"
+          download="Documentacion.pdf"
+        >
+          <Icon class="mr-2 text-lg" name="tabler:download" />
+          <span>Documentación inscripcion</span>
+        </a>
+      </Button>
+      <Button class="w-full bg-blue-600 hover:bg-blue-500" as-child>
+        <a
+          class="flex items-center"
+          href="/files/CUADERNILLO_MTM_1.pdf"
+          download="Cuadernillo_matematica.pdf"
+        >
+          <Icon class="mr-2 text-lg" name="tabler:download" />
+          <span>CUADERNILLO MATEMATICA 1ER AÑO</span>
+        </a>
+      </Button>
+      <Button class="w-full bg-blue-600 hover:bg-blue-500" as-child>
+        <a
+          class="flex items-center"
+          href="/files/CUADERNILLO_PLG_1.pdf"
+          download="Cuadernillo_practicas_del_lenguaje.pdf"
+        >
+          <Icon class="mr-2 text-lg" name="tabler:download" />
+          <span>CUADERNILLO PDL 1ER AÑO</span>
+        </a>
+      </Button>
     </div>
   </div>
 </template>
