@@ -12,6 +12,8 @@ const props = withDefaults(
   }
 );
 
+const emits = defineEmits(["change-page"]);
+
 const delegatedProps = computed(() => {
   const { class: _, ...delegated } = props;
 
@@ -21,7 +23,11 @@ const delegatedProps = computed(() => {
 
 <template>
   <PaginationLast v-bind="delegatedProps">
-    <Button :class="cn('w-10 h-10 p-0', props.class)" variant="outline">
+    <Button
+      :class="cn('w-10 h-10 p-0', props.class)"
+      variant="outline"
+      @click="$emit('change-page')"
+    >
       <slot>
         <ChevronsRight class="h-4 w-4" />
       </slot>
