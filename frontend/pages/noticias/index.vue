@@ -20,19 +20,33 @@ await pagination(1);
 </script>
 
 <template>
-  <div class="my-16 max-w-screen-lg mx-auto px-8">
-    <h2 class="text-black text-center text-5xl font-bold my-8">Noticias</h2>
+  <div class="my-16 max-w-screen-xl mx-auto px-8">
+    <h2 class="text-center text-5xl font-bold my-8">Blog Escolar</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <ReportCard v-for="post in response.data" :post="post" :key="post.id" />
-    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <Card v-for="post in response.data">
+        <CardHeader>
+          <div class="bg-blue-500 p-4 rounded overflow-hidden">
+            <img
+              src="/logotipo.png"
+              alt="Logotipo de la escuela"
+              class="w-20 mx-auto"
+            />
+          </div>
+        </CardHeader>
+        <CardContent>
+          <NuxtLink
+            :to="`/noticias/${post.attributes.slug}`"
+            class="text-pretty font-bold underline"
+          >
+            {{ post.attributes.title }}
+          </NuxtLink>
 
-    <div class="flex justify-center items-center my-8 gap-4">
-      <Pagination
-        v-for="page in response.meta.pagination.pageCount"
-        @change-page="pagination"
-        :page="page"
-      />
+          <p class="text-gray-500 line-clamp-3">
+            {{ post.attributes.description }}
+          </p>
+        </CardContent>
+      </Card>
     </div>
   </div>
 </template>
