@@ -14,17 +14,22 @@ export async function getAllSubjects() {
 
 export async function getAllBooks() {
   return await findBooks("libraries", {
+    pagination: {
+      page: 1,
+      pageSize: 10,
+    },
     populate: ["pdf"],
   });
 }
 export async function getQueriedBooks(
   book: string,
+  page = 1,
   year?: string,
   subject?: string
 ) {
   const filters = {
-    ...(year ? { year: { $in: year } } : {}),
-    ...(subject ? { subject: { $in: subject } } : {}),
+    ...(year ? { year: { year: { $eq: year } } } : {}),
+    ...(subject ? { subject: { name: { $eq: subject } } } : {}),
     name: {
       $contains: book,
     },
@@ -32,12 +37,10 @@ export async function getQueriedBooks(
 
   return await findBooks("libraries", {
     filters,
+    pagination: {
+      page,
+      pageSize: 10,
+    },
     populate: ["pdf"],
   });
 }
-
-// const post = await find("reports", {
-//   filters: {
-//     slug: { $in: to.params.slug },
-//   },
-// });
